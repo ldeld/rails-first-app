@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsFirstApp</title>
+    <title>My App</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,14 @@
   </head>
 
   <body>
+    <nav style="width: 100%; background-color: grey;">
+      <p>
+        <%= link_to "My logo", root_path %>
+        <%= link_to "Contact", contact_path %>
+        <%= link_to "About", about_path %>
+      </p>
+    </nav>
     <%= yield %>
+    <p>A basic footer</p>
   </body>
 </html>
